@@ -1,3 +1,8 @@
-<h1>PROYECTOS</h1>
-<p>{{projects}}</p>
-<button onclick="window.location.href='/'">Home</button>
+{% extends 'layouts/base.html' %}
+
+{% block content%}
+    <h1>PROYECTOS</h1>
+    {% for project in projects %}
+    <h3>{{project}}</h3>
+    {% endfor %}
+{% endblock %}
